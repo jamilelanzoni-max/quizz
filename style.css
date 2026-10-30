@@ -1,0 +1,89 @@
+*{ 
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background: linear-gradient(135deg, #dd489a, #e51da2a7);
+  color:ghostwhite;
+}
+.jogo{
+  widh: 90%;
+  max-width: 800px;
+}
+header{
+  font-size: 12px;
+
+}
+#categoria{
+  margin-top: 8px;
+  opacity:0.8;
+}
+header h1{
+  font-size:12px;
+}
+.painel{
+  background-color: hotpink(0, 0, 0, 0.35);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.status{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+#pergunta{
+  margin-bottom: 25px;
+  line-height: 1.4;
+
+}
+.alternativas{
+width: 100%;
+padding: 15px;
+border:2px solid white;
+border-radius: 12px;
+background-color: antiquewhite;
+color: aliceblue;
+font-size: 1rem;
+cursor:pointer;
+text-align: left;
+transition: 0.2;
+display:grid;
+gap: 10px;
+}
+.alternativas:hover{
+  background-color: deeppink;
+  transform:scale(1.1);
+}
+.correta{
+  background-color: rgba(180, 249, 112, 0.99) !important;
+}
+.errada{
+  background-color: rgb(237, 57, 57)!important;
+}
+.mensagem{
+  min-height: 30px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.botao-proxima{
+  margin-top: 15px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botao-proxima:disblend{
+opacity: 0.4;
+cursor:not-allowed;
+}
